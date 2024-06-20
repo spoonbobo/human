@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='human',
     version='0.1',
-    packages=find_packages(),
+    packages=find_packages('human'),
     install_requires=[
         # List your dependencies here
     ],
@@ -19,4 +19,5 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
+    include_package_data=True
 )
