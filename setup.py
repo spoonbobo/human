@@ -1,23 +1,29 @@
 from setuptools import setup, find_packages
 
+VERSION = '0.0.1' 
+DESCRIPTION = 'My first Python package'
+LONG_DESCRIPTION = 'My first Python package with a slightly longer description'
+
+# Setting up
 setup(
-    name='human',
-    version='0.1',
-    packages=find_packages('human'),
-    install_requires=[
-        # List your dependencies here
-    ],
-    author='creator',
-    author_email='seasonluke@gmail.com',
-    description='Human',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    url='https://github.com/spoonbobo/human',
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
-    python_requires='>=3.6',
-    include_package_data=True
+       # the name must match the folder name 'verysimplemodule'
+        name="human", 
+        version=VERSION,
+        author="Jason Dsouza",
+        author_email="<youremail@email.com>",
+        description=DESCRIPTION,
+        long_description=LONG_DESCRIPTION,
+        packages=find_packages(),
+        install_requires=[], # add any additional packages that 
+        # needs to be installed along with your package. Eg: 'caer'
+        
+        keywords=['python', 'first package'],
+        classifiers= [
+            "Development Status :: 3 - Alpha",
+            "Intended Audience :: Education",
+            "Programming Language :: Python :: 2",
+            "Programming Language :: Python :: 3",
+            "Operating System :: MacOS :: MacOS X",
+            "Operating System :: Microsoft :: Windows",
+        ]
 )
